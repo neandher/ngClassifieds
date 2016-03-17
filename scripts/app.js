@@ -17,4 +17,12 @@ angular
                 templateUrl: 'components/classifieds/new/classifieds.new.tpl.html',
                 controller: 'newClassifiedsCtrl as vm'
             })
+            .state('classifieds.edit', {
+                url: '/edit/:id',
+                templateUrl: 'components/classifieds/edit/classifieds.edit.tpl.html',
+                controller: 'editClassifiedsCtrl as vm',
+                params: {
+                    classified: null
+                }
+            })
     });
